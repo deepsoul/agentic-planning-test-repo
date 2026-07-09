@@ -62,6 +62,18 @@ Repo → **Settings** → **Webhooks**:
 5. Vercel baut Preview → Badge **PREVIEW** (klickbar).
 6. PR mergen → optional **PROD** nach Production-Deploy.
 
+## Demo-Ticket AGT-101
+
+Fertige DoR-Texte und Pitch-Skript liegen im Dashboard-Repo unter `docs/pitch-demo-AGT-101.md`.
+
+Kurzbefehl in Cursor (dieses Repo geöffnet):
+
+```text
+/agentic-planning AGT-101
+```
+
+Der Agent ändert `index.html` → h1 **„Agentic Planning — Live Demo"** → Draft-PR → Pipeline-Badge erscheint im Board.
+
 ## Branch-Konvention
 
 ```
