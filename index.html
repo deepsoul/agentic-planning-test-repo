@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agentic Planning — Test Target</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #09090b;
+        --card: #18181b;
+        --line: #27272a;
+        --text: #fafafa;
+        --muted: #a1a1aa;
+        --accent: #34d399;
+        --accent-dim: #059669;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          sans-serif;
+        background:
+          radial-gradient(ellipse 80% 50% at 50% -20%, rgba(52, 211, 153, 0.12), transparent),
+          var(--bg);
+        color: var(--text);
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+      }
+
+      main {
+        width: min(100%, 42rem);
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        background: color-mix(in srgb, var(--card) 92%, transparent);
+        padding: 2rem;
+        box-shadow: 0 0 40px rgba(52, 211, 153, 0.06);
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-family: ui-monospace, monospace;
+        font-size: 0.7rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent);
+        border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--line));
+        background: color-mix(in srgb, var(--accent) 8%, transparent);
+        border-radius: 999px;
+        padding: 0.25rem 0.65rem;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        margin: 0 0 0.75rem;
+        font-size: 1.75rem;
+        line-height: 1.2;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      ul {
+        margin: 1.25rem 0 0;
+        padding-left: 1.2rem;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      code {
+        font-family: ui-monospace, monospace;
+        font-size: 0.85em;
+        color: var(--accent);
+      }
+
+      footer {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--line);
+        font-family: ui-monospace, monospace;
+        font-size: 0.72rem;
+        color: #52525b;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="badge">● pipeline test target</div>
+      <h1>Agentic Planning Test Repo</h1>
+      <p>
+        Minimales Ziel-Repository für den Pitch: Cursor-Agenten committen hier auf
+        <code>feature/agt-…</code>-Branches, GitHub-Webhooks aktualisieren die
+        Pipeline-Badge im Sprint-Board.
+      </p>
+      <ul>
+        <li>Board: <code>agentic-sprint-planning.vercel.app</code></li>
+        <li>Repo: <code>deepsoul/agentic-planning-test-repo</code></li>
+        <li>Deploy: Vercel Preview → Badge <strong>PREVIEW</strong></li>
+      </ul>
+      <footer>Deployed via Vercel · Agentic Lifecycle Stream Demo</footer>
+    </main>
+  </body>
+</html>
