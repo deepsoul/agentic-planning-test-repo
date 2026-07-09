@@ -17,16 +17,22 @@ Hier landen Agent-Branches und PRs. GitHub-Webhooks synchronisieren PR- und Depl
 
 ### 2. MCP im Cursor (dieses Repo öffnen)
 
+**Empfohlen:** MCP **einmal global** in Cursor einrichten — dann brauchst du hier keine eigene Config.  
+Anleitung: Dashboard-Repo → `docs/MCP-ZIEL-REPO.md`
+
+**Oder** lokal kopieren:
+
 ```bash
 cp .cursor/mcp.json.example .cursor/mcp.json
 ```
 
-In `.cursor/mcp.json`:
+In `.cursor/mcp.json` den **`--prefix`-Pfad** auf deinen absoluten Dashboard-Clone setzen:
 
-- `DASHBOARD_URL`: `https://agentic-sprint-planning.vercel.app`
-- `MCP_API_TOKEN`: derselbe Wert wie im Dashboard (Vercel Env / `.env`)
-- `args`-Pfad: absoluter Pfad zu `mein-agenten-board/mcp-server/src/index.ts`  
-  _(oder `npx tsx` aus einem geklonten Dashboard-Repo)_
+```text
+/Users/…/agentic-sprint/mein-agenten-board
+```
+
+Nicht `../mein-agenten-board` — der Ordner liegt bei uns unter `agentic-sprint/`.
 
 Cursor: **Reload Window**.
 

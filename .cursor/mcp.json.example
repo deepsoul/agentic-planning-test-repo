@@ -1,8 +1,13 @@
 {
   "mcpServers": {
     "agentic-planning": {
-      "command": "npx",
-      "args": ["tsx", "../mein-agenten-board/mcp-server/src/index.ts"],
+      "command": "npm",
+      "args": [
+        "run",
+        "mcp:dev",
+        "--prefix",
+        "/ABSOLUTER/PFAD/ZU/agentic-sprint/mein-agenten-board"
+      ],
       "env": {
         "DASHBOARD_URL": "https://agentic-sprint-planning.vercel.app",
         "MCP_API_TOKEN": "DEIN_MCP_API_TOKEN"
